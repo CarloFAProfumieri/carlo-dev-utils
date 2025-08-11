@@ -34,7 +34,6 @@ const checksumControlChars = {
     '[NAK]': 0x15,
     '[CR]': 0x0D,
     '[LF]': 0x0A,
-    // add more if needed
 };
 
 const keywords = [ '[STX]', '[ETX]', '[ETB]', '[ACK]', '[NAK]', '[CR]', '[LF]'];

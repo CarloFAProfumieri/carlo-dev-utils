@@ -1,0 +1,144 @@
+/* Reset some default spacing */
+* {
+    font-family: monospace, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+        --background-color: #1a1f30;
+    --text-color: white;
+    --violet-color: #289070
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: var(--background-color);
+    color: var(--text-color);
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background-color);
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--background-color);
+    flex: 1;
+}
+.card {
+    background: var(--background-color);
+    border: solid 1px var(--text-color);
+    border-radius: 40px;
+    margin: 5px;
+    padding: 10px;
+}
+#checksum{
+    min-width: 35rem;
+}
+.card-header{
+    text-align: center;
+}
+.output {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.hex{
+    max-width: 2.5rem;
+}
+.dec{
+    max-width: 3rem;
+}
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: var(--background-color);
+}
+
+footer a {
+    color: #004080;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.input-wrapper {
+    font-family: monospace;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    min-height: 1.5em;
+    overflow-wrap: break-word;
+}
+
+.inline-code{
+    font-family: monospace;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 1.5em;
+    overflow-wrap: break-word;
+}
+
+#editable {
+    outline: none;
+    min-height: 1.5em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    caret-color: black;
+}
+
+mark {
+    background-color: transparent;
+    color: var(--violet-color);
+}
+
+#checksum{
+    max-width: 30rem;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carlo's Developer Utilities</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+<header>
+    <div id="logo">CARLO'S DEVELOPER UTILITIES</div>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/link">Page</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main role="main">
+    <div class="card">
+        <article>
+            <h1>Carlo's Developer Utilities</h1>
+            <p>Random utilities that im tired of doing small python scripts for <br>
+                <strong>-YEAH OR USING RANDOM PAGES FOR </strong> <br>
+                Yeah dude shut up <br>
+                Also a sandbox for learning html 5 and css
+            </p>
+        </article>
+    </div>
+    <div class="card">
+        <article id="checksum">
+            <h2 class="card-header">Calcular Checksum</h2>
+            <p> Calcula el checksum para el protocolo ASTM. Si queremos ingresar caracteres especiales debemos hacerlo
+                entre corchetes, por ejemplo <mark class="inline-code">[STX]</mark> </p>
+            <p>INPUT: </p>
+            <div class="input-wrapper">
+                <div id="editable" contenteditable="true" spellcheck="false" aria-label="Input para checksum" aria-placeholder="" role="textbox"></div>
+            </div>
+            <p>RESPONSE: </p>
+            <label>hex: </label>
+            <input class="hex output" type="text" placeholder="00" readonly/>
+            <label>decimal: </label>
+            <input class="dec output" type="text" placeholder="000" readonly/>
+        </article>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; Carlo Profumieri @ developer-utilities</p>
+    <address>
+        <a href="mailto:carloprofumieri@gmail.com">contacto</a>
+    </address>
+</footer>
+</body>
+</html>

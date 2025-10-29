@@ -20,7 +20,6 @@ function calcChecksumHexadecimal(str) {
 }
 
 function replaceKeywordsWithChars(str) {
-    // Replace each keyword with the corresponding character
     return str.replace(/\[(STX|ETX|ETB|ACK|NAK|CR|LF)\]/g, (match) => {
         const code = checksumControlChars[match];
         return String.fromCharCode(code);
